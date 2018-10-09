@@ -83,7 +83,7 @@ class ComparisonBar extends React.Component {
 											label={
 												productData
 													? `${productData['Web Brand']} ${
-															productData.Collection
+														productData.Collection
 													  }`
 													: `Item #${index + 1}`
 											}

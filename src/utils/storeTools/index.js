@@ -14,7 +14,11 @@ let middlware = composeEnhancers(
 
 const configureStore = (initialState, initialReducers) => {
 	const store = createStore(
-		initialReducers ? combineReducers({ ...initialReducers }) : (state) => state,
+		initialReducers
+			? combineReducers({
+				...initialReducers
+			  })
+			: (state) => state,
 		initialState,
 		middlware
 	);
